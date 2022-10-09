@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ 
+<form id="paymentform" name="paymentform" method="get" onreset="location.reload()">
+    Name:
+    <input type="text" id="customerName" name="customerName" placeholder="Valarie" required><br />
+
+<div onchange="calculate()">
+    Check In:
+    <input type="datetime-local" id="checkin" name="checkin" required><br />
+
+Check Out:
+    <input type="datetime-local" id="checkout" name="checkout" required/><br />
+</div>
+
+  Number of days:
+    <input type="number" id="numdays" name="numdays" onchange="calculate()"/><br />
+
+    Room Type:
+    <select name="room" onchange="roomprice()">
+      <option value="Select Room" >Select Room</option>
+      <option value="120.00" id="typeroom" onclick="calculate()">Standard Room(RM120.00)</option>
+      <option value="140.00" id="typeroom" onclick="calculate()">Deluxe Room(RM140.00)</option>
+      <option value="225.00" id="typeroom" onclick="calculate()">Superior Deluxe Room(RM225.00)</option>
+    </select><br/>
+
+    Total Amount(RM)
+    <input type="number" id="total" name="total" value="0.00" /><br />
+
+              
+    <input type="submit" value="Submit Order"/>
+    &nbsp;&nbsp;
+    <input type="reset" value="Cancel Order" onclick="confirm('Cancel Order')"/>
+
+  
+
+
+</form>
+
+<script>
+
+
+
+    function calculate(){
+        var checkindays=document.getElementById("checkin").value;
+var checkoutdays=document.getElementById("checkout").value;
+var datein=new Date(checkindays);
+var dateout=new Date(checkoutdays);
+var totaldays=checkoutdays-checkindays;
+var room_value=document.paymentform.room.value;                        
+var totalprice =totaldays*room_value;
+
+        var checkin = document.getElementById["checkin"]
+
+        document.paymentform.total.value=total.toFixed(2);
+
+        if(dateout>datein){
+            alert("Check out date must bigger than check in date !");
+        }
+    }
+</script>
+
+</html>
+<!-- function roomprice(){
+    var totaldays=document.paymentform.checkout.value - document.paymentform.checkin.value ;
+    var totalprice=0;
+    room_value=document.paymentform.room.value;                        
+    totalprice=totaldays * room_value
+
+document.paymentform.number.value=totalprice.toFixed(2);
+calculate();
+} -->

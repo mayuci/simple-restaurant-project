@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+   form{
+      text-align: center;
+      
+   }
+ 
+</style>
+<head>
+  
+   <meta charset="utf-8" />
+   <title>Dragon Fast Restaurant</title>
+   <link href="reset_style.css" rel="stylesheet"></link>
+   <link href="style3.css" rel="stylesheet"></link>
+   <link href="style1.css" rel="stylesheet"></link>
+<script type="text/javascript" src="general.js" defer></script>
+
+</head>
+<header>
+    <img src="../picture/DragonFastLogo.png" alt="Dragon Fast" class="dfr"/>
+    <nav class="horizontal">
+      <a id="navicon" href="#"><img src="../picture/dlr_navicon2.png" alt="" /></a>
+       <ul> 
+                                                           
+              <li><a href="homepage.html">Home</a></li>            <!--Homepage,easy introduction and some content-->
+             <li><a href="menu.html">Menu</a></li>                <!--flowers&Gifts,Add to Cart,Payment,Product Delivery-->
+             <li><a href="aboutus.html">Membership</a></li>  <!--membership system -->
+             <li><a href="promotion.html">Promotion</a></li>      <!--events-->
+             <li><a href="review.html">Reviews</a></li>           <!--Customer feedback (comment)-->
+             <li><a href="contactus.html">Contact Us</a></li>     <!--Live chat-->
+           
+           
+       </ul>
+    </nav>
+ </header>
+ <article>
+<body>
+<form name="login" id="login" action="cart.html"  method="get">
+
+   <h1>Login</h1>
+
+   <p>Date : <input type="text" name="date" id="date" size="10"  class="numbers" disabled/> </p>
+   
+   <p>User Name : <input type="text" id="uName" ></p>
+   <p>Password: <input type="text" id="uPassword"   ></p>
+   
+
+<button onclick="myFunction()"  type="button" class="btn btn-primary">Login</button> 
+
+<button  type="reset" class="btn btn-primary">Cancel</button>
+</form>
+<p>Value: <span id="demo1" style ="color: red;">  </span></p>
+<p>Value: <span id="demo2" style ="color: red;">  </span></p>
+
+</article>
+<script>
+var usersArray = ["Ali","1111", "MeiLing", "2222"];
+
+function checkUserName(userName) {
+      if(userName == document.getElementById("uName").value){
+            return userName; 
+      }     
+}
+
+
+function myFunction() {
+   varUserNameIndex= usersArray.findIndex(checkUserName);
+   varUserName= usersArray.find(checkUserName);
+   if ( varUserName== null) {
+            document.getElementById("demo1").innerHTML = "Invalid User Name" ;
+            document.getElementById("uName").value = " " ;             
+            document.getElementById("uName").focus() ;    
+            document.getElementById("uPassword").value = " " ;    
+            document.getElementById("demo2").innerHTML = " " ;             
+    } else {
+        document.getElementById("demo1").innerHTML =usersArray[varUserNameIndex];
+       
+        if(usersArray[varUserNameIndex+1]!= document.getElementById("uPassword").value){
+           document.getElementById("demo2").innerHTML = "Invalid User Password"  ;   
+           document.getElementById("uPassword").value="" ;                  
+           document.getElementById("uPassword").focus() ;         
+        }else {
+              document.getElementById("demo2").innerHTML = usersArray[varUserNameIndex+1];  
+              name=usersArray[varUserNameIndex];
+  	       document.login.submit();
+            
+        }
+    }        
+      
+ }
+
+</script>
+<footer>
+   <h1>ORDER</h1>
+   <a href="menu.html">Menu</a>  
+
+   <h1>ABOUT US</h1>
+   <a href="aboutus.html">Our Story</a> 
+   <h1>CUSTOMER SERVICE</h1>
+   <a href="contactus.html">Contact Us</a> <a href="FAQ.html">FAQs</a>
+   
+   <h1>MY ACCOUNT</h1>
+ <a href="login.html">Log In</a> <a href="#">Order Status</a>
+   
+   <h1>POLICIES</h1>
+   <a href="privacy.html">Privacy Policy</a> 
+   <h1>Complain ?</h1>
+   <a href="review.html">Feedback</a> 
+   
+
+  
+
+
+
+
+
+   <address>
+     Dragon Fast Restaurant <br />
+      251 Pavillion Malaysia <br />
+      Wilayah Persekutuan, KL  51098 <br />
+      (1300-222-666)
+      </address>
+
+      <!-- Live Chat -->
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-65f407b5-5aad-402d-987c-42bb0a3cba74"></div>
+</footer>
+
+</body>
+</html>

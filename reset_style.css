@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+  
+  
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Horizontal Navigation List Styles */
+nav.horizontal a {
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+     
+  }
+  header nav ul {
+     background: linear-gradient(to right, rgb(189, 77, 62) 20%, rgb(218, 160, 142)); 
+     border-radius: 9px;
+     font-size: 20px;
+  }
+  
+  
+  header nav ul li {
+     display: block;
+     font-size: 1em;   
+  }
+
+  header nav ul li a {
+ width: 100%;
+   text-align: center;
+}
+
+  
+  header nav ul li a:hover {
+     color: white;
+     background-color: rgb(3, 51, 86);
+  }
+  a#navicon {
+     display: none;
+  }
+  
+  nav.horizontal a:link, 
+  nav.horizontal a:visited {
+     color: rgb(255, 255, 255);
+  }
+  
+  nav.horizontal a:hover, 
+  nav.horizontal a:active {
+     background-color: rgb(0, 0, 0);
+  }   
+  
+nav li{
+  
+   display: block;
+   width: 16.67%;
+}
+
+
+
+
+
+/* Homepage */
+ul.pad{
+  
+   font-size: 90%;
+   padding-left: 150px;
+   background-color: rgb(231, 99, 84);
+ 
+}
+
+body p{
+   
+   font-size: 20px;
+   line-height: 2;
+   margin-left:10px;
+   color: black;
+}
+
+
+
+.p1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+  
+}
+
+
+article.Welcome {
+  
+   color: rgb(255, 34, 9) ;
+   font-size: 17px ;
+   line-height: 2;
+   margin-left:10px;
+   text-align: center;
+   
+}
+
+.p1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+  
+}
+
+div.column1 {
+   float: left;
+   width: 33.33%;
+   padding:20px;
+   height: 500px;
+   text-align: center;
+   background-color: #eca2a2e8;
+   
+ }
+
+ .column2{
+   float: left;
+   width: 33.33%;
+   padding:20px;
+ height: 500px;
+   text-align: center;
+   background-color: white;
+
+ }
+
+ .column3 {
+   float: left;
+   width: 33.33%;
+   padding:20px;
+   height: 500px;
+   text-align: center;
+   background-color: #eca2a2e8;
+   margin-bottom: 30px;
+ }
+ h1#QC{
+   color: black;
+   font-size: 20px;
+   font-weight:950;
+   line-height:50px;
+   font-style:italic;
+  
+}
+
+h1#GS{
+   color: black;
+   font-size: 20px;
+   font-weight:950;
+   line-height:50px;
+   font-style:italic;
+}
+
+h1#CNE{
+   color: black;
+   font-size: 19px;
+   font-weight:950;
+   line-height:50px;
+   font-style:italic;
+}
+
+p#qcp{
+   color : black;
+   font-size:15.9px;
+   line-height: 30px;
+
+}
+
+p#gsp{
+  color : black;
+  font-size:18px;
+  line-height: 30px;
+}
+
+p#cnep{
+  color:black;
+  font-size:17px;
+  line-height: 30px;
+}
+
+table{
+  border:5px solid rgb(170, 79, 79);
+ 
+  width:80%;
+  text-align:center;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  
+}
+
+caption#WT{
+  font-size:40px;
+  text-align:center;
+  color: black;
+}
+
+th{
+   font-size:25px;
+   
+ }
+ 
+ td{
+   background-color:rgb(230, 164, 178);
+   font-size:22px;
+ }
+
+ strong{
+  color: royalblue;
+ }

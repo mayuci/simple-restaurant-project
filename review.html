@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  
+        <meta charset="utf-8" />
+        <title>Dragon Fast Restaurant</title>
+        <link href="reset_style.css" rel="stylesheet"></link>
+        <link href="style3.css" rel="stylesheet"></link>
+        <link href="style1.css" rel="stylesheet"></link>
+        <script src="rb_formsubmit.js"></script>
+     
+     </head>
+     <body>
+      <header>
+        <img src="../picture/DragonFastLogo1.png" alt="Dragon Fast" class="dfr"/>
+        <nav class="horizontal">
+          <a id="navicon" href="#"><img src="../picture/dlr_navicon2.png" alt="" /></a>
+           <ul> 
+                                                               
+                  <li><a href="homepage.html">Home</a></li>            <!--Homepage,easy introduction and some content-->
+                 <li><a href="menu.html">Menu</a></li>                <!--flowers&Gifts,Add to Cart,Payment,Product Delivery-->
+                 <li><a href="membership.html">Membership</a></li>  <!--membership system -->
+                 <li><a href="promotion.html">Promotion</a></li>      <!--events-->
+                 <li><a href="review.html">Reviews</a></li>           <!--Customer feedback (comment)-->
+                 <li><a href="contactus.html">Contact Us</a></li>     <!--Live chat-->
+           </ul>
+
+       </nav>
+        </header>
+      
+      
+      
+             <form id="survey" action="getreview.html" method="GET" class="feedback">
+
+              <fieldset >
+            <legend>Customer Details</legend>
+             <b><u>Let Us Know You Better*</u></b><br/>
+
+             <div class="formBox">
+              <label for="customerName">Name :</label> 
+              <input type="text" id="customerName" name="customerName" placeholder="Customers Name*" required>
+            </div>
+
+              <div class="formBox">
+             &nbsp;<label for="gender">Select Gender :</label>
+              <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select><br /><br />
+              </div>
+
+
+               <div class="formBox">
+               <label for="birth">Date Of Birth :</label>
+              <input type="date" id="birth" name="dateofbirth" ><br/><br/>
+              </div>
+
+              <div class="formBox">
+              <label for="cmail">Email :</label>
+              <input type="email" id="cmail" name="email" required><br/>
+              <br/>
+              </div>
+              
+             
+              <b><u>Contact Details</u></b><br/>
+              <div class="formBox">
+              <label for="telnumber">Mobile Number :</label>
+              <input type="tel" id="telnumber" name="telnumber" placeholder="012-3456789" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required><br/><br/>
+              </div>
+
+
+              <div class="formBox">
+                <label for="address">Address :</label>
+              <input type="text" id="address" name="address" placeholder="Taman Wayu , Gombak"    required><br/><br/>
+              </div>
+
+              
+              <div class="formBox">
+                <label for="postalcode">Postal Code :</label>
+              <input type="text" id="postalcode" name="postal" placeholder="51200" pattern="^\d{5}(-\d{4})?$"    required><br/><br/>
+              </div>
+
+             
+               <b><u>Restaurant Details</u></b><br/>
+               <div class="formBox">
+               <label for="store">Select Store</label>
+               <select>
+                 <option value="Midvalley" id="store" >Dragon Fast Restaurant Midvalley</option>
+                 <option value="Pavillion" id="store">Dragon Fast Restaurant Pavillion</option>
+               </select><br/><br/>
+               </div>
+
+
+               <div class="formBox">
+               Are you a membership ?
+             <fieldset class="optGroup">
+               <label for="membership">Yes </label><input type="radio" id="membership" name="membership"     >
+               <label for="nomembership">No</label><input type="radio" id="nomembership" name="membership"     ><br/><br/>
+              </fieldset>
+               </div>
+               
+
+
+
+              
+               <b><u>Order Types</u></b><br/>
+               <div class="formBox">
+                 <fieldset class="optGroup">
+              <label for="delivery">Delivery</label> <input type="radio" id="delivery" name="ordertypes" value="Delivery">
+
+               <label for="dinein">Dine-in</label><input type="radio" id="dinein" name="ordertypes">
+               <label for="drivethru">Drive Thru</label><input type="radio" id="drivethru" name="ordertypes" >
+             <br/><br/>
+            </fieldset>
+             </div>
+             </fieldset>
+
+
+
+             <fieldset id="expInfo">
+               <legend>Feedback</legend>
+             <b><u>Tell Us About Your Experience*</u></b><br/>
+             <div class="formBox">
+             <label>How was your last DRF experience?</label>
+             <fieldset class="optGroup "><label>&nbsp;&nbsp;&nbsp;Acceptable</label><input type="radio" id="experience" name="DFRexperience" value="acceptable">Unacceptable<input type="radio" id="experience" name="DFRexperience" value="Unacceptable"><br/>
+              </fieldset>
+            </div>
+    
+             <div class="formBox">
+             <label>Are you liking the food ?</label>
+             <fieldset class="optGroup">
+              &nbsp;&nbsp;&nbsp;Yes<input type="radio" id="tastefood" name="foodtaste" value="yes">&nbsp;&nbsp;&nbsp;&nbsp;No<input type="radio" id="tastefood" name="foodtaste" value="No"><br/>
+            </fieldset>
+            </div>
+    
+            <div class="formBox">
+             <label>Was the service is excellent and friendly? </label>
+             <fieldset class="optGroup"><label>&nbsp;&nbsp;   Yes</label><input type="radio" id="service" name="service" value="acceptable">&nbsp;&nbsp;No<input type="radio" id="service" name="service" value="Unacceptable"><br/><br/><br/>
+             </fieldset> 
+            </div>
+
+            <div class="formBox">
+              <label for="rangeBox">Rate the overall service<br />
+                     (0=bad, 5=not bad, 10=great)</label>
+              0
+              <input name="rateservice" id="rangeBox" type="range"
+                     value="1" step="1" min="0" max="10" />
+              10
+           </div>
+
+
+             <b><u>Tell Us About Your Feedback</u></b><br/>
+              <textarea name="comments"  rows="7" cols="50" placeholder="Write your Feedback here*"  ></textarea><br><br> 
+          
+              
+            </fieldset>
+     
+            <div class="button" style="margin-left: 28%;">
+            <input type="submit" value="Submit My Feedback">
+           
+          </div>
+          <div class="button" style="margin-left: 7%;">
+            <input type="reset" value="Cancel">
+          </div>
+
+</form>
+
+
+ 
+               <footer>
+                <h1>ORDER</h1>
+      <a href="menu.html">Menu</a>  
+
+      <h1>ABOUT US</h1>
+      <a href="aboutus.html">Our Story</a> 
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="contactus.html">Contact Us</a> <a href="FAQ.html">FAQs</a>
+      
+      <h1>MY ACCOUNT</h1>
+    <a href="login.html">Log In</a> <a href="#">Order Status</a>
+      
+      <h1>POLICIES</h1>
+      <a href="privacy.html">Privacy Policy</a> 
+      <h1>Complain ?</h1>
+      <a href="review.html">Feedback</a> 
+      
+  
+     
+
+
+
+  
+
+      <address>
+        Dragon Fast Restaurant <br />
+         251 Pavillion Malaysia <br />
+         Wilayah Persekutuan, KL  51098 <br />
+         (1300-222-666)
+         </address>
+
+         <!-- Live Chat -->
+         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+         <div class="elfsight-app-65f407b5-5aad-402d-987c-42bb0a3cba74"></div>
+               </footer>
+        </body>
+</html>
+      

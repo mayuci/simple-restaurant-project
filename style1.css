@@ -1,0 +1,449 @@
+
+
+
+/* Image Styles */
+
+img.dfr {
+   display:block;
+   height: auto;
+   width: 100%;
+  opacity: 0.9;
+  
+  
+ 
+   
+}
+img.location {
+   margin-left: 40px;
+   display: block;
+    width: 90%;
+    font-size: 40px;
+    border: 2px solid rgb(230, 177, 177);
+    background-color: transparent;
+
+}
+p.location{
+   font-size: 40px;
+   text-align: center;
+   display: block;
+   border: 2px solid rgb(182, 54, 54);
+   background-color: rgb(240, 146, 92);
+}
+
+img.waifu{
+display: block;
+   width: 50%;
+   margin-left: 29%;
+   background-color: rgb(207, 106, 59);
+ }
+
+ 
+
+img.why{
+   display: block;
+   width: 40%;
+   margin-left: 290px;
+   background-color: rgb(196, 78, 42);
+   
+}
+img.family{
+   display: block;
+   width: 60%;
+   margin-left: 180px;
+   background-color: rgb(196, 78, 42);
+   
+}
+
+
+/* Location style */
+ .point-img-zoom img {
+   transition: transform 0.9s ease;
+ }
+ .point-img-zoom:hover img {
+   transform: scale(1.10);
+ }
+
+
+/*Form Styles */
+form.feedback{
+   color: rgb(209, 65, 65);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding-left: 30px;
+   font-size: 25px;
+   
+}
+/* FAQ list decoration */
+ol.a{
+   list-style-type: lower-alpha;
+   padding-left: 50px;
+  
+}
+
+ul{
+   list-style-type: disc;
+   padding-left: 50px;
+  
+}
+
+
+/* FAQ border style */
+div.first{
+  border: 10px solid rgb(243, 174, 174);
+  background-color: rgb(243, 174, 174);
+  margin: 20px ;
+  
+}
+p.FAQ{
+   font-size: 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ /* Media Styles */
+   audio,video{
+      display: flex;
+      flex-wrap: wrap;
+   margin: 20px auto;
+
+    width: 50%;
+    float: left;
+
+     }
+               
+               
+ /* Track Styles */
+    ::cue{
+  
+   background-color: transparent;
+    text-shadow: rgb(255, 255, 255) 1px 1px 2px;
+    color: whitesmoke;
+   font: 1em sans-serif;
+               }
+ ::cue(.Title){
+  font:2em serif;
+ }
+
+
+  /* Cart Styles */
+   
+ strong.cart-total-title{
+   font-size: 30px;
+   text-align: center;
+}
+span.cart-total-price{
+   font-size: 30px;
+   text-align: center;
+}
+.cart-total-price-deliveryfees{
+   font-size: 30px;
+   text-align: center;
+}
+
+
+ 
+* {
+   box-sizing: border-box;
+   font-family: Raleway;
+   color: #777;
+  }
+  
+
+
+section.content-section {
+    margin: 1em;
+}
+
+section.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+
+h2.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+
+  button.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+div.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.shop-item {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+span.shop-item-title {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.shop-item-details {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+span.shop-item-price {
+    display: none;
+    flex-grow: 1;
+    color: #333;
+    font-size: 2.6em;
+    text-align: center;
+  
+   
+}
+
+
+button.shop-item-button {
+    font-size: 1.25em;
+    margin-left: 40%;
+    
+}
+button.btn-primary {
+   color: white;
+   background-color: #a8582a;
+   border: none;
+   border-radius: .3em;
+   font-weight: bold;
+}
+
+button.btn-primary:hover {
+   background-color: #6b8022;
+}
+
+span.cart-header {
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+}
+
+div.cart-row {
+   display: flex;
+}
+
+/* Animation style (Mini Menu) */
+div.photos img:nth-of-type(1) {
+   left: 50px;
+   top: 100px;
+   width: 15%;
+}
+
+div.photos img:nth-of-type(2) {
+   left: 150px;
+   top: 100px;
+   width: 15%;
+}
+
+div.photos img:nth-of-type(3) {
+   left: 250px;
+   top: 50px;
+   width: 15%;
+
+}
+
+div.photos img:nth-of-type(4) {
+   left: 350px;
+   top: 150px;
+   width: 20%;
+}
+
+div.photos img:nth-of-type(5) {
+   left: 450px;
+   top: 50px;
+   width: 15%;
+}
+div.photos img:nth-of-type(6) {
+   left: 450px;
+   top: 50px;
+   width: 15%;
+}
+
+
+div.photos img:nth-of-type(1) {
+   left: 50px;
+   top: 50px;
+   -webkit-transform: rotate(5deg);
+   -moz-transform: rotate(5deg);
+   -o-transform: rotate(5deg);
+   transform: rotate(5deg);
+}
+
+div.photos img:nth-of-type(2) {
+   left: 150px;
+   top: 100px;
+   -webkit-transform: rotate(-10deg);
+   -moz-transform: rotate(-10deg);
+   -o-transform: rotate(-10deg);
+   transform: rotate(-10deg);
+}
+
+div.photos img:nth-of-type(3) {
+   left: 250px;
+   top: 50px;
+   -webkit-transform: rotate(7deg);
+   -moz-transform: rotate(7deg);
+   -o-transform: rotate(7deg);
+   transform: rotate(7deg);
+}
+
+div.photos img:nth-of-type(4) {
+   left: 350px;
+   top: 150px;
+   -webkit-transform: rotate(-3deg);
+   -moz-transform: rotate(-3deg);
+   -o-transform: rotate(-3deg);
+   transform: rotate(-3deg);
+}
+
+div.photos img:nth-of-type(5) {
+   left: 450px;
+   top: 150px;
+   -webkit-transform: rotate(2deg);
+   -moz-transform: rotate(2deg);
+   -o-transform: rotate(8deg);
+   transform: rotate(9deg);
+}
+div.photos img:nth-of-type(6) {
+   left: 450px;
+   top: 500px;
+   -webkit-transform: rotate(2deg);
+   -moz-transform: rotate(-2deg);
+   -o-transform: rotate(-2deg);
+   transform: rotate(-9deg);
+}
+
+div.photos img:hover {
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -o-transform: scale(1.5);
+   transform: scale(1.5);
+   z-index: 10;
+}
+div.photos img {
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+div.photos img {
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s Nease-out;
+   transition: all 0.5s ease-out;
+   padding: 10px 10px 30px 10px;
+   background:rgb(219, 191, 191) ;      
+   border: solid 1px transparent;
+}
+
+  
+* {box-sizing: border-box;}
+img {
+   
+   vertical-align: middle;
+   
+
+}
+.mySlides {display: none}
+/* Slideshow container */
+div.slideshow-container {
+   max-width: 800px;
+  min-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Caption text */
+div.text {
+  color:rgb(70, 72, 190);
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* The dots/bullets/indicators */
+span.dot {
+  
+   height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+span.active {
+  background-color:black;
+}
+
+/* Fading animation */
+div.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+   .prev, .next,.text {font-size: 11px}
+}
+
+
+/* Next & previous buttons */
+a.prev, a.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+a.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}

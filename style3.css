@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+
+
+html {
+ 
+   background-image: url(../picture/brooklyn.jpg);
+
+    /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  
+}
+
+/* Page Body Styles */
+body {
+   background-color: #f1cfcfe8;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  background-repeat: repeat;
+      width: 100%;
+      min-width: 640px;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+   
+   
+}
+
+
+
+
+/* Article Styles */
+
+article  h1 {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 2.2em;
+   font-weight: 900;
+   text-align: center;
+   margin: 0.5em ;
+   color: black;
+}
+
+article {
+  
+   color: rgb(187, 85, 74) ;
+   font-size: 15px ;
+   line-height: 2;
+   margin-left:10px;
+}
+
+
+
+
+div.rightgo{
+   
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+   padding: 5px;
+   font-size:200%;
+   
+}
+
+div.rightgo h1 {
+   text-align: center;
+   
+}
+
+/*button styles*/
+div.button input {
+   background-color: rgb(207, 132, 123);
+   color: black;
+   border: 6px solid rgb(207, 132, 123);
+   
+   padding: 2px 2px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 5px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+ 
+   
+   
+}
+
+div.button:hover input {
+   background-color: rgb(207, 132, 123);
+   color: black;
+   border: 6px solid rgb(207, 132, 123);
+   padding: 6px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 4px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+ 
+}
+
+/*link style*/
+a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 8px 16px;
+   color: rgb(184, 87, 87);
+}
+a:hover.choose{
+   color: white;
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+/*review.html input,select style*/
+input {
+    background-color: #f1cfcfe8;
+ 
+}
+
+select {
+   background-color: #f1cfcfe8;
+   
+}
+
+input[type='radio']::after {
+   width: 13px;
+   height: 13px;
+   border-radius: 15px;
+   top: -3px;
+   left: -3px;
+   position: relative;
+   background-color: #f1cfcfe8;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid black;
+}
+
+
+input[type='radio']:checked:after {
+   width: 13px;
+   height: 13px;
+   border-radius: 15px;
+   top: -3px;
+   left: -3px;
+   position: relative;
+   background-color: #ee0e0e;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid black;
+}
+
+legend {
+   color: rgb(230, 138, 138);
+   background-color: rgb(43, 21, 23);
+   font-weight: bolder;
+   border-radius: 25px;
+
+}
+fieldset {
+   display: inline;
+   background-color: #f0d4d4;
+   flex: 1 1 300px; 
+   font-size: 20px;
+   border-radius: 20px;
+  -webkit-flex: 1 1 300px;
+   flex: 1 1 300px;
+ 
+}
+
+/* Form Layout Styles       */
+
+form#survey {
+
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+   background-color: rgb(245, 219, 212);
+   border-radius: 20px;
+  -webkit-flex: 1 1 300px;
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
+div.formBox {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   margin: 7px 0px;
+}
+
+div.formBox > * {
+   -webkit-flex: 1 1 150px;
+   flex: 1 1 150px;
+}
+/* Text Area Styles */
+
+textarea {
+ width: 100%;
+   background-color: rgb(245, 206, 206);
+}
+    
+
+
+/* Footer styles */   
+
+footer {
+ 
+  
+   color: white;    
+   background: transparent;   
+   -moz-column-width: 200px;
+   -webkit-column-width: 200px;
+    column-width: 200px;
+
+   -moz-column-gap: 25px;
+   -webkit-column-gap: 25px;
+    column-gap: 25px;
+    
+    padding: 20px 40px;
+}
+
+footer h1 {
+   color: rgb(100, 80, 80);   
+   font-size: 1em;
+   margin: 4px 0px;
+   text-align: center;
+   text-decoration: underline;
+}
+
+footer h1:first-of-type {
+   margin-top: 0px;
+}
+
+footer a {
+  display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 0.9em;
+   text-align: center;
+}
+
+footer a:hover {
+   text-decoration: underline;
+   color: rgb(196, 39, 39);
+}
+
+footer address {
+   margin-top: 30px;
+   font-style: normal;
+}
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(255, 255, 180);
+}
+
+input#customerName:focus:valid,
+input#cmail:focus:valid,
+input#telnumber:focus:valid,
+input#address:focus:valid,
+input#postalcode:focus:valid{
+   background:rgb(220, 255, 220) url(../picture/rb_valid.png) right/ contain no-repeat;
+}
+input#nameBox:focus:invalid,
+input#phoneBox:focus:invalid,
+input#telnumber:focus:invalid,
+input#address:focus:invalid,
+input#postalcode:focus:invalid {
+   background:rgb(255, 230, 230) url(../picture/rb_invalid.png) right/ contain no-repeat;
+}
+
+
+/* Promotion table style */
+table {
+   border:5px solid moccasin; width: 100%; border-collapse:separate;text-align: center;}
+td, th {
+  border: 3px solid purple;
+  
+}
+
+
+
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   =============================== */
+
+   @media only screen and (max-width: 640px) {
+
+      a#navicon {
+         display: block;
+         background-color: rgb(228, 140, 128);
+         
+      }
+      
+      
+      header nav {
+         padding-bottom: 15px;
+      }
+      
+      header nav ul {
+         display: none;
+      }
+      
+      header nav ul li {
+      
+         font-size: 1.4em;
+         padding-right: 150px;
+         line-height: 1.6em;
+         height: 2em;
+         width: 100%;
+         background: linear-gradient(to right, #a40606 20%, #d98324);
+       
+      }
+   
+      
+      a#navicon:hover+ul, header nav ul:hover {
+         display: block;
+
+      }
+      header img#dfr {
+         width: 100%;
+      }
+      div.column1 {
+         float: left;
+         width: 33.33%;
+         padding:20px;
+         height: fit-content;
+         text-align: center;
+         background-color: #eca2a2e8;
+         
+       }
+      
+       .column2{
+         float: left;
+         width: 33.33%;
+         padding:20px;
+         height: max-content;
+         text-align: center;
+         background-color: white;
+      
+       }
+      
+       .column3 {
+         float: left;
+         width: 33.33%;
+         padding:20px;
+         height: fit-content;
+         text-align: center;
+         background-color: #eca2a2e8;
+         margin-bottom: 30px;
+       }
+   }
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   
+   
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}

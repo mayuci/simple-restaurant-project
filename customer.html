@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>Dragon Fast Restaurant</title>
+   <link href="reset_style.css" rel="stylesheet"></link>
+   <link href="style3.css" rel="stylesheet"></link>
+   <link href="style1.css" rel="stylesheet"></link>
+   <script src="rb_formsubmit.js"></script>
+   <script src="cart.js" defer></script>
+   
+  
+    
+    </head>
+    <script src="checkform.js" defer></script>
+      <header>
+        
+        
+     <body>
+      
+        <header>
+           <img src="../picture/DragonFastLogo.png" alt="Dragon Fast" class="dfr"/>
+           <nav class="horizontal">
+            <a id="navicon" href="#"><img src="../picture/dlr_navicon2.png" alt="" /></a>
+              <ul>
+                                                               
+            <li><a href="homepage.html">Home</a></li>            <!--Homepage,easy introduction and some content-->
+               <li><a href="menu.html">Menu</a></li>                <!--flowers&Gifts,Add to Cart,Payment,Product Delivery-->
+               <li><a href="membership.html">Membership</a></li>  <!--membership system -->
+               <li><a href="promotion.html">Promotion</a></li>      <!--events-->
+               <li><a href="review.html">Reviews</a></li>           <!--Customer feedback (comment)-->
+               <li><a href="contactus.html">Contact Us</a></li>     <!--Live chat,FAQ-->
+              </ul>
+           </nav>
+        </header>
+        
+        <form name="burger" id="burger"  action="checkout.html"  method="get">  
+           <article id="Welcome">
+              <h1 style="color: rgb(173, 21, 21);text-align: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;text-align:left;"><b>Customer Information</b></h1>
+              </article>
+              <p>Thank you for choosing our restaurant . this is the online ordering form for quick and easy orders . Please enter your name and phone number and whether your address in the place that provided for delivery or pickup . Please enter a () and writing the note if have any note for us . If you want to place your order over the phone,please call us at <a href="tel:+1300-222-666">(1300-222-666)</a>&#9742;.</p>
+              <div>
+                <label for="namebox">Name*</label>
+                <input name="customerName" id="customerName" type="text" placeholder="First and Last Name" required />
+              </div>  
+            
+
+             <div>
+                <label for="phoneBox">Phone*</label>
+             <input name="customerPhone" id="phoneBox" type="tel" required
+                      placeholder="(nnn) nnn-nnnn"
+                      pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+             </div>
+             <div>
+                 <label for="memberBox">Member*</label>
+                 <input name="custMember" id="memberBox" type="text" placeholder="Yes/No" />
+             </div>
+             <div>
+             <input name="orderType" id="delivery" type="radio" checked/><label for="delivery">Delivery</label> 
+             <input name="orderType" id="pickup" type="radio"/><label for="pickup">Pickup</label>
+          </div>   
+
+          <fieldset >
+            <legend>Sauce</legend>
+             <label for="sauce">Type of sauce (packet) :</label>
+             <select id="typesauce">
+                
+                   <option>Barbeque Sauce</option>
+                   <option>Tomato Sauce</option>
+                   <option>Cili Sauce</option>
+               
+             </select><br /><br />
+         
+             
+             <label for="add">Adding types :</label>
+             <select id="add">
+                
+                   <option>+ Sauce</option>
+                   <option>+ Cheese</option>
+                   <option>+ Lettuce</option>
+               
+             </select>
+            </fieldset>
+         <fieldset>
+         
+         <legend>Drinks</legend>
+             <label for="soda">Type of drinks :</label>
+             <select id="typesoda">
+                
+                   <option>Coca Cola</option>
+                   <option>Pepsi </option>
+                   <option>Sprite</option>
+                   <option>Diet Coca Cola</option>
+                   <option>Fanta </option>
+                   <option>A&W</option>
+               
+             </select>
+            
+            <br /><br />
+         
+         
+            
+             <label for="sodasize" >Size of Drinks :</label>
+         <input type="radio" name="sodasize" id="Sodasize" value="Large">Large
+         <input type="radio" name="sodasize" id="Sodasize" value="Normal">Regular
+         </fieldset>
+         
+         
+         <fieldset >
+            <legend>French Fries</legend>
+         <label for="friessize">*Size of Fries :</label>
+         <input type="radio" name="friessize" id="Friessize" value="Large">Large
+         <input type="radio" name="friessize" id="Friessize" value="Normal">Regular
+          &nbsp; &nbsp;
+         *<label for="sauce">Type of sauce (packet) :</label>
+         <select id="typesauce">
+            
+               <option>Barbeque Sauce</option>
+               <option>Tomato Sauce</option>
+               <option>Cili Sauce</option>
+           
+         </select>
+         <br /><br /><br />
+         </fieldset>
+
+         <fieldset>
+            <legend>Special instructions</legend>
+            <p style="padding-left: 35px;">***Please let us know if you are allergic to anything of if we need to avoid anything.</p><p>Example : No lettuce</p>
+            
+            <textarea name="comments"  rows="7" cols="50"  placeholder="Write your Comment here*"  ></textarea><br><br> 
+            </fieldset>
+ 
+          <fieldset >
+             <legend>Delivery option</legend>
+             <div>
+                 <input name="deladd" id="kualaLumpur" type="radio" checked/><label for="Kuala Lumpur">Kuala Lumpur</label>
+                 <input name="deladd" id="selangor" type="radio"/><label for="Selangor">Selangor</label>
+                 <input name="deladd" id="other" type="radio"/><label for="Other">Other</label>
+             <textarea name="delAddress"  rows="7" cols="50"  id="addressBox" placeholder="Enter delivery address"></textarea>
+             </div>
+             <div>
+                <label for="delbox">Delivery Time&#9201;</label>
+                <input name="delTime" id="delBox" type="time"/>
+             </div>
+          </fieldset>
+ 
+          
+            <fieldset >
+             <legend>Pickup Option</legend>
+             <labelfor="pickupBox">Pickup Time&#9201; </label>
+             <input name="pickupTime" id="pickupBox" type="time"/>
+          </fieldset>
+ 
+          <div>
+             <input type="submit" value="Submit&#9989;"/>
+             <input type="reset" value="Cancel&#10062;"/>
+          </div>
+       </form>         
+          
+             
+
+
+
+              <footer>
+               <h1>ORDER</h1>
+               <a href="menu.html">Menu</a>  
+         
+               <h1>ABOUT US</h1>
+               <a href="aboutus.html">Our Story</a> 
+               <h1>CUSTOMER SERVICE</h1>
+               <a href="contactus.html">Contact Us</a> <a href="FAQ.html">FAQs</a>
+               
+               <h1>MY ACCOUNT</h1>
+             <a href="login.html">Log In</a> <a href="#">Order Status</a>
+               
+               <h1>POLICIES</h1>
+               <a href="privacy.html">Privacy Policy</a> 
+               <h1>Complain ?</h1>
+               <a href="review.html">Feedback</a> 
+               
+           
+              
+         
+         
+         
+           
+         
+               <address>
+                 Dragon Fast Restaurant <br />
+                  251 Pavillion Malaysia <br />
+                  Wilayah Persekutuan, KL  51098 <br />
+                  (1300-222-666)
+                  </address>
+         
+                  <!-- Live Chat -->
+                  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                  <div class="elfsight-app-65f407b5-5aad-402d-987c-42bb0a3cba74"></div>
+               </footer>
+               
+    </body>
+</html>

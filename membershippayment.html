@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <meta charset="utf-8" />
+        <title>Dragon Fast Restaurant</title>
+        <link href="reset_style.css" rel="stylesheet"></link>
+        <link href="style3.css" rel="stylesheet"></link>
+        <link href="style1.css" rel="stylesheet"></link>
+        <script src="rb_formsubmit.js"></script>
+    
+        <style>
+      
+
+      * {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+
+
+.col-50{
+  padding: 0 16px;
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* #a{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ff0000;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#a div {
+ 
+  width: 50px;
+  height: 50px;
+}
+
+.icon-mastercard {
+ 
+  
+
+  width: 50px;
+  height: 50px;
+  
+} */
+.visa{
+  margin-right: 90%;
+  margin-bottom: 2px ;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 24px; 
+border: 7px solid  rgb(26, 31, 113);
+  background-color: rgb(26, 31, 113);
+}
+
+.mastercard{
+  text-align: center;
+margin-bottom: 2px ;
+padding: 7px 0;
+font-size: 24px; 
+
+border: 7px solid  none;
+background: linear-gradient(to right, rgb(238, 31, 31) 20%, orange);
+margin-right: 80%;
+}
+
+.american{
+  text-align: center;
+margin-bottom: 2px ;
+padding: 7px 0;
+font-size: 24px; 
+
+border: 7px solid  none;
+background: linear-gradient(to right, rgb(68, 66, 190) 20%, rgb(81, 66, 219));
+margin-right: 80%;
+}
+
+
+
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+ 
+        </style>
+     
+     </head>
+     <body>
+        <header>
+         <img src="../picture/DragonFastLogo.png" alt="Dragon Fast" class="dfr"/>
+         <a id="navicon" href="#"><img src="../picture/dlr_navicon2.png" alt="" /></a>
+           <nav class="horizontal">
+              <ul>
+                                                                     
+               <li><a href="homepage.html">Home</a></li>            <!--Homepage,easy introduction and some content-->
+               <li><a href="menu.html">Menu</a></li>                <!--flowers&Gifts,Add to Cart,Payment,Product Delivery-->
+               <li><a href="membership.html">Membership</a></li>  <!--membership system -->
+               <li><a href="promotion.html">Promotion</a></li>      <!--events-->
+               <li><a href="review.html">Reviews</a></li>           <!--Customer feedback (comment)-->
+               <li><a href="contactus.html">Contact Us</a></li>     <!--Live chat,FAQ-->
+              </ul>
+           </nav>
+        </header>
+        <form action="getpayment.html" method="GET" >
+
+    <div class="col-50">
+      <h3>Payment</h3>
+      <label for="fname">Select Cards</label>
+      <div class="icon-container">
+        
+<input type="radio" id="visa" name="creditcard">Visa<br />
+<input type="radio" id="MasterCard" name="creditcard">MasterCard<br />
+<input type="radio" id="american" name="creditcard">American Express
+      </div>
+<br />
+    <label for="cname">Name on Card</label>
+    <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+    <label for="ccnum">Credit card number</label>
+    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+    <label for="expmonth">Exp Month</label>
+    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+    <div class="row">
+      <div class="col-50">
+        <label for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear" placeholder="2018" required> 
+      </div>
+      <div class="col-50">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="352" required>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="button"  style="margin-left:60%;">
+  <input type="submit" value="Proceed to Payment">
+
+</div>
+</form>
+    <footer>
+      <h1>ORDER</h1>
+      <a href="menu.html">Menu</a>  
+
+      <h1>ABOUT US</h1>
+      <a href="aboutus.html">Our Story</a> 
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="contactus.html">Contact Us</a> <a href="FAQ.html">FAQs</a>
+      
+      <h1>MY ACCOUNT</h1>
+    <a href="login.html">Log In</a> <a href="#">Order Status</a>
+      
+      <h1>POLICIES</h1>
+      <a href="privacy.html">Privacy Policy</a> 
+      <h1>Complain ?</h1>
+      <a href="review.html">Feedback</a> 
+      
+  
+     
+
+
+
+  
+
+      <address>
+        Dragon Fast Restaurant <br />
+         251 Pavillion Malaysia <br />
+         Wilayah Persekutuan, KL  51098 <br />
+         (1300-222-666)
+         </address>
+
+         <!-- Live Chat -->
+         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+         <div class="elfsight-app-65f407b5-5aad-402d-987c-42bb0a3cba74"></div>
+       </footer>
+     </body>
+     </html>
